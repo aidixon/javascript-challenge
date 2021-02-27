@@ -1,6 +1,7 @@
 // from data.js
 var tableData = data;
 
+
 // Select the table for the data to populate
 var tbody = d3.select("tbody");
 
@@ -18,3 +19,14 @@ data.forEach(function(ufosighting) {
         cells.text(value);
     });
 });
+
+
+// Create table that filters the data
+function filtertable() {
+    // Variables
+    var input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value();
+    table = document.getElementById("ufo-table");
+    tr = table.getElementsByTagName("tr");
+}
