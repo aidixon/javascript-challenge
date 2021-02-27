@@ -5,3 +5,9 @@ var tableData = data;
 var tbody = d3.select("tbody");
 
 console.log(tableData);
+
+// Iterate through data and insert into table
+data.forEach(function(ufosighting) {
+    console.log(ufosighting);
+
+})
